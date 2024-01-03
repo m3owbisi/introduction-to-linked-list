@@ -26,7 +26,7 @@ void insertAtTail(node *&head,int val){
     }
     temp->next=n;
 }
-void deletionAtHead(node *head){
+void deletionAtHead(node *&head){
     if(head==NULL){
         return;
     }
@@ -70,6 +70,8 @@ int main(){
     insertAtTail(head,4);
     display(head);
     deletion(head,3);
+    display(head);
+    deletionAtHead(head);
     display(head);
     return 0;
 }
